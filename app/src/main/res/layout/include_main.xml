@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="#FF5001">
+
+    <ImageView
+        android:id="@+id/leftImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_normal_code"
+        android:scaleType="center"
+       />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_height="34dp"
+        android:layout_width="match_parent"
+        android:hint="搜索一下"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:focusable="false"
+        android:layout_weight="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="#CCCCCC"
+        android:drawableRight="@drawable/ic_edit_search"
+        android:background="@drawable/bg_edit_text_search"
+        />
+
+
+    <ImageView
+        android:id="@+id/rightImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_normal_message"
+        android:scaleType="center"
+        />
+
+</LinearLayout>

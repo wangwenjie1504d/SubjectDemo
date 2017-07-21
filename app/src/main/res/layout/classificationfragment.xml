@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/topInclude"
+        layout="@layout/include_main"
+        ></include>
+    <LinearLayout
+        android:id="@+id/classLinearLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/class1RecyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="80dip"
+            android:dividerHeight="1px"
+            />
+        <!--dividerHeight 设置分割线边距-->
+        <!--fadingEdge="none"   去掉上边和下边黑色的阴影-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/class2RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            />
+        <!--divider 设置分割线颜色-->
+    </LinearLayout>
+</LinearLayout>
